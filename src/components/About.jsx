@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCertificate, FaSchool, FaBriefcase } from 'react-icons/fa';
+import { FaSchool, FaBriefcase } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -19,7 +19,7 @@ const About = () => {
             <div className="text-gray-400 mb-4">
               <h5 className="font-bold">Centrale Nantes</h5>
               <p>BSc in Engineering</p>
-              <p>Location: Nantes, France</p>
+              <p>Nantes, France</p>
               <p className="text-sm">Top 5 grande école – a French engineering school</p>
             </div>
             <div className="relative">
@@ -68,19 +68,19 @@ const About = () => {
             </h4>
             <div className="text-gray-400">
               <h5 className="font-bold">Decathlon</h5>
-              <p>Location: Lille, France</p>
+              <p>Lille, France</p>
               <p>Data Engineer</p>
               <p>August 2024 - Present</p>
               <hr className="my-4 border-gray-600" />
 
               <h5 className="font-bold">Mangabey</h5>
-              <p>Location: Paris, France</p>
+              <p>Paris, France</p>
               <p>Data Engineer</p>
               <p>January 2023 - August 2024</p>
               <hr className="my-4 border-gray-600" />
 
               <h5 className="font-bold">Fifteen - Augmented Bike Networks</h5>
-              <p>Location: Vanves, France</p>
+              <p>Vanves, France</p>
               <p>Growth/Data Engineer</p>
               <p>March 2022 - September 2022</p>
             </div>
