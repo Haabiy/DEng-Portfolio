@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl text-white font-bold">
-          <Link to="home" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
+          <Link to="hero" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
             Abiy
           </Link>
         </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-8 text-white text-lg">
           <li>
             <Link
-              to="home"
+              to="hero"
               smooth={true}
               duration={500}
               className="hover:text-blue-400 transition duration-300"
@@ -93,7 +93,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="footer" // Updated to scroll to Connect Me section
+              to="contact" 
               smooth={true}
               duration={500}
               className="hover:text-blue-400 transition duration-300"
@@ -110,7 +110,7 @@ const Navbar = () => {
           }`}
         >
           <Link
-            to="home"
+            to="hero"
             smooth={true}
             duration={500}
             className="text-white text-2xl hover:text-blue-400 transition duration-300"
@@ -137,13 +137,13 @@ const Navbar = () => {
             Projects
           </Link>
           <Link
-            to="footer" // Updated to scroll to Connect Me section
+            to="contact" 
             smooth={true}
             duration={500}
             className="text-white text-2xl hover:text-blue-400 transition duration-300"
             onClick={toggleMenu}
           >
-            Connect Me
+            Contact
           </Link>
         </div>
       </div>

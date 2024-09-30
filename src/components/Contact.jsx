@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <footer className="bg-gray-800 py-10">
+    <footer id='contact' className="bg-gray-800 py-10">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold text-white mb-4">Connect with Me</h2>
         <p className="text-lg text-gray-400 mb-6">
