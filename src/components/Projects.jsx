@@ -3,8 +3,32 @@ import React from 'react';
 // Dummy project data
 const projects = [
   {
-    title: "Real-Time Data Processing with Kafka & Spark",
-    description: "A scalable real-time data ingestion and processing pipeline using Apache Kafka and Apache Spark.",
+    title: "Real-Time Data Processing with Kafka",
+    description: "A scalable real-time data ingestion using Apache Kafka and Apache Spark.",
+    image: "https://via.placeholder.com/600x400", // Replace with your project image URL
+    link: "https://github.com/yourproject"
+  },
+  {
+    title: "Data Warehousing with AWS Redshift",
+    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    image: "https://via.placeholder.com/600x400", // Replace with your project image URL
+    link: "https://github.com/yourproject"
+  },
+  {
+    title: "Data Warehousing with AWS Redshift",
+    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    image: "https://via.placeholder.com/600x400", // Replace with your project image URL
+    link: "https://github.com/yourproject"
+  },
+  {
+    title: "Data Warehousing with AWS Redshift",
+    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    image: "https://via.placeholder.com/600x400", // Replace with your project image URL
+    link: "https://github.com/yourproject"
+  },
+  {
+    title: "Data Warehousing with AWS Redshift",
+    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
     image: "https://via.placeholder.com/600x400", // Replace with your project image URL
     link: "https://github.com/yourproject"
   },

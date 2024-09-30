@@ -15,7 +15,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-2xl text-white font-bold">
           <Link to="hero" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
-            Abiy
+            Data 🫰🏾 Engineering
           </Link>
         </div>
 
