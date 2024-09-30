@@ -48,7 +48,7 @@ const Contact = () => {
         </div>
 
         <p className="text-gray-500 text-sm mt-8">
-          &copy; {new Date().getFullYear()} Abiy Habte Dema. All rights reserved.
+          &copy; {new Date().getFullYear()} Abiy Dema. All rights reserved.
         </p>
       </div>
     </footer>
