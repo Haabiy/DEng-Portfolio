@@ -1,41 +1,44 @@
 import React from 'react';
+import ENIM from '../Assets/ENIM.png';
+import Tailwind from '../Assets/Tailwind.png';
+
 
 // Dummy project data
 const projects = [
   {
-    title: "Real-Time Data Processing with Kafka",
-    description: "A scalable real-time data ingestion using Apache Kafka and Apache Spark.",
-    image: "https://via.placeholder.com/600x400", // Replace with your project image URL
+    title: "ENIM ⦿ Marketplace",
+    description: "React Js based UI where data is sold. React Js based UI where data is sold.",
+    image: ENIM,
+    link: "https://github.com/Haabiy/marketplace-fe"
+  },
+  {
+    title: "ENIM ⦿ Marketplace",
+    description: "Django backend backend platform where data is sold. Django backend backend platform where data is sold",
+    image: ENIM,
+    link: "https://github.com/Haabiy/marketplace-be"
+  },
+  {
+    title: "Tailwind-Playground",
+    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    image: Tailwind,
+    link: "https://github.com/Haabiy/Tailwind-Playground"
+  },
+  {
+    title: "EMR Runner",
+    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    image: "https://via.placeholder.com/600x400",
+    link: "https://github.com/Haabiy/EMRRunner"
+  },
+  {
+    title: "Data Warehousing with AWS Redshift",
+    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    image: "https://via.placeholder.com/600x400",
     link: "https://github.com/yourproject"
   },
   {
     title: "Data Warehousing with AWS Redshift",
     description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
-    image: "https://via.placeholder.com/600x400", // Replace with your project image URL
-    link: "https://github.com/yourproject"
-  },
-  {
-    title: "Data Warehousing with AWS Redshift",
-    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
-    image: "https://via.placeholder.com/600x400", // Replace with your project image URL
-    link: "https://github.com/yourproject"
-  },
-  {
-    title: "Data Warehousing with AWS Redshift",
-    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
-    image: "https://via.placeholder.com/600x400", // Replace with your project image URL
-    link: "https://github.com/yourproject"
-  },
-  {
-    title: "Data Warehousing with AWS Redshift",
-    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
-    image: "https://via.placeholder.com/600x400", // Replace with your project image URL
-    link: "https://github.com/yourproject"
-  },
-  {
-    title: "Data Warehousing with AWS Redshift",
-    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
-    image: "https://via.placeholder.com/600x400", // Replace with your project image URL
+    image: "https://via.placeholder.com/600x400",
     link: "https://github.com/yourproject"
   },
 ];
