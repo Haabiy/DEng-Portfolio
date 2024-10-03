@@ -1,7 +1,9 @@
 import React from 'react';
 import ENIM from '../Assets/ENIM.png';
 import Tailwind from '../Assets/Tailwind.png';
-
+import EMR from '../Assets/EMR.png';
+import Todox from '../Assets/Todox.png';
+import FlaskStringify from '../Assets/FlaskStringify.png';
 
 // Dummy project data
 const projects = [
@@ -18,29 +20,29 @@ const projects = [
     link: "https://github.com/Haabiy/marketplace-be"
   },
   {
+    title: "EMR Runner",
+    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    image: EMR,
+    link: "https://github.com/Haabiy/EMRRunner"
+  },
+  {
     title: "Tailwind-Playground",
     description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
     image: Tailwind,
     link: "https://github.com/Haabiy/Tailwind-Playground"
   },
   {
-    title: "EMR Runner",
+    title: "TodoX",
     description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
-    image: "https://via.placeholder.com/600x400",
-    link: "https://github.com/Haabiy/EMRRunner"
+    image: Todox,
+    link: "https://github.com/Haabiy/To-doX"
   },
   {
-    title: "Data Warehousing with AWS Redshift",
+    title: "FlaskStringify",
     description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
-    image: "https://via.placeholder.com/600x400",
-    link: "https://github.com/yourproject"
-  },
-  {
-    title: "Data Warehousing with AWS Redshift",
-    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
-    image: "https://via.placeholder.com/600x400",
-    link: "https://github.com/yourproject"
-  },
+    image: FlaskStringify,
+    link: "https://github.com/Haabiy/FlaskStringify"
+  }
 ];
 
 const Projects = () => {
@@ -91,6 +93,18 @@ const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* See More Button */}
+        <div className="flex justify-center mt-12">
+          <a 
+            href="https://github.com/Haabiy?tab=repositories" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-10 rounded-lg transition-all duration-300 transform hover:scale-105"
+          >
+            See More
+          </a>
         </div>
       </div>
 
