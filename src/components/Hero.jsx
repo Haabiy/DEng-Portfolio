@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
@@ -32,11 +33,15 @@ const Hero = () => {
             <FaEnvelope />
           </a>
         </div>
-
-        {/* Call to Action */}
-        <a href="#projects" className="mt-10 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-10 rounded-lg transition-all duration-300 transform hover:scale-105 animate-fade-in-up delay-800">
+        
+        <Link
+          to="projects"
+          smooth={true}
+          duration={500}
+          className="mt-10 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-10 rounded-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
+        >
           Explore My Work
-        </a>
+        </Link>
       </div>
 
       {/* Decorative Circles */}

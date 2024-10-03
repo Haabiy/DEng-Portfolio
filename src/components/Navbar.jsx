@@ -66,7 +66,7 @@ const Navbar = () => {
               to="hero"
               smooth={true}
               duration={500}
-              className="hover:text-blue-400 transition duration-300"
+              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer"
             >
               Home
             </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="hover:text-blue-400 transition duration-300"
+              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer"
             >
               About
             </Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
               to="projects"
               smooth={true}
               duration={500}
-              className="hover:text-blue-400 transition duration-300"
+              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer"
             >
               Projects
             </Link>
@@ -96,7 +96,7 @@ const Navbar = () => {
               to="contact" 
               smooth={true}
               duration={500}
-              className="hover:text-blue-400 transition duration-300"
+              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer"
             >
               Contact Me
             </Link>
@@ -113,7 +113,7 @@ const Navbar = () => {
             to="hero"
             smooth={true}
             duration={500}
-            className="text-white text-2xl hover:text-blue-400 transition duration-300"
+            className="text-white text-2xl hover:text-blue-400 transition duration-300 hover:cursor-pointer"
             onClick={toggleMenu}
           >
             Home
@@ -122,7 +122,7 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
-            className="text-white text-2xl hover:text-blue-400 transition duration-300"
+            className="text-white text-2xl hover:text-blue-400 transition duration-300 hover:cursor-pointer"
             onClick={toggleMenu}
           >
             About
@@ -131,7 +131,7 @@ const Navbar = () => {
             to="projects"
             smooth={true}
             duration={500}
-            className="text-white text-2xl hover:text-blue-400 transition duration-300"
+            className="text-white text-2xl hover:text-blue-400 transition duration-300 hover:cursor-pointer"
             onClick={toggleMenu}
           >
             Projects
@@ -140,7 +140,7 @@ const Navbar = () => {
             to="contact" 
             smooth={true}
             duration={500}
-            className="text-white text-2xl hover:text-blue-400 transition duration-300"
+            className="text-white text-2xl hover:text-blue-400 transition duration-300 hover:cursor-pointer"
             onClick={toggleMenu}
           >
             Contact
