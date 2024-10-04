@@ -1,141 +1,139 @@
 import React from 'react';
-import { FaSchool, FaBriefcase, FaStar, FaQuoteRight } from 'react-icons/fa';
+import { FaGraduationCap, FaCertificate, FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const About = () => {
   return (
     <>
       {/* About Me Section */}
-      <section id="about" className="bg-gray-800 py-20 px-6 text-center">
+      <section id="about" className="py-20 px-6 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
         <div className="container mx-auto">
-          <h3 className="text-4xl font-bold mb-6 text-blue-400">About Me</h3>
-          <p className="text-lg text-gray-400 mb-8 max-w-3xl mx-auto">
-            I specialize in transforming raw data into valuable insights through modern data engineering tools and techniques. Below are my education, certifications, and experiences:
+          <h3 className="text-4xl font-bold text-center text-white mb-8">About Me</h3>
+          <p className="text-lg text-gray-300 text-center mb-12 max-w-2xl mx-auto">
+            I specialize in transforming raw data into valuable insights through modern data engineering tools and techniques.
           </p>
 
-          <div className="flex justify-center space-x-8">
-            {/* Education & Certifications Section */}
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 w-1/2">
-              <h4 className="text-2xl font-semibold text-blue-400 mb-4 flex items-center">
-                <FaSchool className="mr-2" /> Education & Certifications
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Education Section */}
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <h4 className="text-2xl font-semibold text-white mb-4 flex items-center">
+                <FaGraduationCap className="mr-2" /> Education
               </h4>
-              <div className="text-gray-400 mb-4">
-                <h5 className="font-bold">Centrale Nantes</h5>
+              <div className="text-gray-300">
+                <h5 className="font-bold text-lg">Centrale Nantes</h5>
                 <p>BSc in Engineering</p>
                 <p>Nantes, France</p>
-                <p className="text-sm">Top 5 grande école – a French engineering school</p>
-              </div>
-              <div className="relative">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex-1 border-t border-gray-600"></div>
-                  <span className="mx-2 text-gray-400">Certifications</span>
-                  <div className="flex-1 border-t border-gray-600"></div>
-                </div>
-                <ul className="list-none space-y-2 text-gray-400">
-                  <li className="flex items-center">
-                    <span className="h-2 w-2 bg-gray-600 rounded-full mr-2"></span>
-                    Web Security with Django
-                  </li>
-                  <li className="flex items-center">
-                    <span className="h-2 w-2 bg-gray-600 rounded-full mr-2"></span>
-                    Tailwind CSS
-                  </li>
-                  <li className="flex items-center">
-                    <span className="h-2 w-2 bg-gray-600 rounded-full mr-2"></span>
-                    Backend Development with Django
-                  </li>
-                  <li className="flex items-center">
-                    <span className="h-2 w-2 bg-gray-600 rounded-full mr-2"></span>
-                    Data Engineering Essentials using SQL, Python, and PySpark
-                  </li>
-                  <li className="flex items-center">
-                    <span className="h-2 w-2 bg-gray-600 rounded-full mr-2"></span>
-                    Introduction to Apache NiFi | Cloudera DataFlow - HDF 2.0
-                  </li>
-                  <li className="flex items-center">
-                    <span className="h-2 w-2 bg-gray-600 rounded-full mr-2"></span>
-                    Data Analysis with Polars
-                  </li>
-                  <li className="flex items-center">
-                    <span className="h-2 w-2 bg-gray-600 rounded-full mr-2"></span>
-                    Analyzing and Visualizing Data with Microsoft Power BI
-                  </li>
-                </ul>
+                <p className="text-sm text-gray-400">Top 5 grande écoles in France</p>
               </div>
             </div>
 
-            {/* Experiences Section */}
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 w-1/2">
-              <h4 className="text-2xl font-semibold text-blue-400 mb-4 flex items-center">
-                <FaBriefcase className="mr-2" /> Experiences
+            {/* Certifications Section */}
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <h4 className="text-2xl font-semibold text-white mb-4 flex items-center">
+                <FaCertificate className="mr-2" /> Certifications
               </h4>
-              <div className="text-gray-400">
-                <h5 className="font-bold">Decathlon</h5>
-                <p>Lille, France</p>
-                <p>Data Engineer</p>
-                <p>August 2024 - Present</p>
-                <hr className="my-4 border-gray-600" />
+              <ul className="space-y-2 text-gray-300">
+                <li><span className="font-semibold">Web Security with Django</span> – Udemy (Issued Jun 2024)</li>
+                <li><span className="font-semibold">Tailwind CSS</span> – Udemy (Issued May 2024)</li>
+                <li><span className="font-semibold">Backend Development with Django</span> – Udemy (Issued Mar 2024)</li>
+                <li><span className="font-semibold">Data Engineering Essentials</span> – Udemy (Issued Feb 2024)</li>
+                <li><span className="font-semibold">Analyzing and Visualizing Data with Power BI</span> – Udemy (Issued Jun 2023)</li>
+                {/* Add more certifications as needed */}
+              </ul>
+            </div>
+          </div>
 
-                <h5 className="font-bold">Mangabey</h5>
-                <p>Paris, France</p>
-                <p>Data Engineer</p>
-                <p>January 2023 - August 2024</p>
-                <hr className="my-4 border-gray-600" />
+          {/* Experiences Section */}
+          <div className="mt-12">
+            <h4 className="text-4xl font-bold text-center text-white mb-8">Experience</h4>
+            <div className="relative pl-6">
+              <div className="absolute w-1 h-full bg-white left-0 transform -translate-x-1/2"></div>
 
-                <h5 className="font-bold">Fifteen - Augmented Bike Networks</h5>
-                <p>Vanves, France</p>
-                <p>Growth/Data Engineer</p>
-                <p>March 2022 - September 2022</p>
+              {/* Experience 1 */}
+              <div className="mb-8">
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                  <h5 className="text-xl font-semibold text-white">Data Engineer @ Decathlon</h5>
+                  <p className="text-gray-300">Lille, France | Sep 2024 – Present</p>
+                  <p className="mt-2 text-gray-400">Working on improving data pipelines, and providing data-driven insights for product improvement.</p>
+                </div>
               </div>
+
+              {/* Experience 2 */}
+              <div className="mb-8">
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                  <h5 className="text-xl font-semibold text-white">Data Engineer @ Mangabey</h5>
+                  <p className="text-gray-300">Paris, France | Jan 2023 – August 2024</p>
+                  <p className="mt-2 text-gray-400">Instrumental in developing data products and building algorithms for seamless integration.</p>
+                </div>
+              </div>
+
+              {/* Experience 3 */}
+              <div className="mb-8">
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+                  <h5 className="text-xl font-semibold text-white">Growth/Data Engineer @ Fifteen</h5>
+                  <p className="text-gray-300">Vanves, France | Jan 2023 – Jul 2024</p>
+                  <p className="mt-2 text-gray-400">Instrumental in developing data products and building algorithms for seamless integration.</p>
+                </div>
+              </div>
+
+              {/* Add more experiences as needed */}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Featured & Recommendations Section */}
-      <section id="featured" className="bg-gray-900 py-20 px-6">
+{/* Featured by Mangabey Section */}
+<section id="featured" className="py-20 px-6 bg-gray-800 relative text-white">
+  <div className="container mx-auto relative z-10">
+    <h3 className="text-4xl font-bold text-center text-white mb-12">Featured by Mangabey</h3>
+    <div className="relative p-8 bg-opacity-90 bg-gray-900 rounded-lg shadow-lg text-center">
+      {/* Featured Text */}
+      <p className="text-lg italic z-10 relative mb-5">
+        "Meet Abiy DEMA, our talented Data Engineer at Mangabey 🚀 Since joining our team in January 2023, Abiy has been instrumental in crafting the backbone of our data product development..."
+      </p>
+
+      {/* See More Button */}
+      <a
+        href="https://www.linkedin.com/posts/mangabey_consulting_services_mangabey-healthdata-pharma-activity-7176127782748344320-IB5G?utm_source=share&utm_medium=member_desktop"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+      >
+        See More on LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+      {/* Recommendations Section */}
+      <section id="recommendations" className="py-20 px-6 bg-gray-900">
         <div className="container mx-auto">
-          <h3 className="text-4xl font-bold text-center mb-12 text-blue-400">Featured & Recommendations</h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {/* Featured Project */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-              <h4 className="text-2xl font-semibold text-blue-400 mb-4 flex items-center">
-                <FaStar className="mr-2" /> Featured
-              </h4>
-              <p className="text-gray-400">
-                "EMR Runner" - A scalable data pipeline solution using AWS Redshift for big data analytics.
-              </p>
-              <a
-                href="https://github.com/Haabiy/EMRRunner"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded-lg transition-transform transform hover:scale-105"
-              >
-                View on GitHub
-              </a>
-            </div>
-
+          <h3 className="text-4xl font-bold text-center text-white mb-8">Recommendations</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Recommendation 1 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-              <h4 className="text-2xl font-semibold text-blue-400 mb-4 flex items-center">
-                <FaQuoteRight className="mr-2" /> Recommendation
-              </h4>
-              <p className="text-gray-400">
-                "Abiy's data engineering skills are exceptional. His ability to solve complex data challenges is top-notch."
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <FaQuoteLeft className="text-white text-2xl mb-4" />
+              <p className="text-gray-300 mb-4">
+                "Abiy is a motivated data engineer known for his quick learning and readiness to tackle challenges."
               </p>
-              <p className="mt-4 text-gray-400 italic">- John Doe, Senior Data Engineer</p>
+              <h5 className="text-lg font-semibold text-white">Hammad Aslam KHAN</h5>
+              <p className="text-sm text-gray-400">Data Engineering & Architecture | Dataflick</p>
+              <FaQuoteRight className="text-white text-2xl mt-4" />
             </div>
 
             {/* Recommendation 2 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
-              <h4 className="text-2xl font-semibold text-blue-400 mb-4 flex items-center">
-                <FaQuoteRight className="mr-2" /> Recommendation
-              </h4>
-              <p className="text-gray-400">
-                "Working with Abiy was a great experience. He brings creative solutions to the table and is highly skilled."
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <FaQuoteLeft className="text-white text-2xl mb-4" />
+              <p className="text-gray-300 mb-4">
+                "Abiy's quick-thinking contributed to efficient problem-solving in critical situations."
               </p>
-              <p className="mt-4 text-gray-400 italic">- Jane Smith, Project Manager</p>
+              <h5 className="text-lg font-semibold text-white">Christelle Depierre-Barrault</h5>
+              <p className="text-sm text-gray-400">Program Director</p>
+              <FaQuoteRight className="text-white text-2xl mt-4" />
             </div>
+
+            {/* Add more recommendations as needed */}
           </div>
         </div>
       </section>
