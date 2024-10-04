@@ -132,11 +132,11 @@ const About = () => {
             </div>
             <div className="flex flex-col items-center">
             <img src={EC2} alt="ec2" className="w-16 h-16 mb-2" />
-              <span>AWS EC2</span>
+              <span>Amazon EC2</span>
             </div>
             <div className="flex flex-col items-center">
             <img src={EMR} alt="EMR" className="w-16 h-16 mb-2" />
-              <span>EMR</span>
+              <span>Amazon EMR</span>
             </div>
             <div className="flex flex-col items-center">
             <img src={Databricks} alt="Databricks" className="w-16 h-16 mb-2" />
@@ -281,6 +281,16 @@ const About = () => {
 
             {/* Add more recommendations as needed */}
           </div>
+          <div className="flex justify-center mt-16">
+          <a 
+            href="https://www.linkedin.com/in/abiy-dema/details/recommendations/?detailScreenTabIndex=0" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-10 rounded-lg transition-all duration-300 transform hover:scale-105"
+          >
+            See More
+          </a>
+        </div>
         </div>
       </section>
     </>
