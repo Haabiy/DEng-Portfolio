@@ -9,37 +9,37 @@ import FlaskStringify from '../Assets/FlaskStringify.png';
 const projects = [
   {
     title: "ENIM ⦿ Marketplace",
-    description: "React Js based UI where data is sold. React Js based UI where data is sold.",
+    description: "React js-based UI designed for showcasing and offering data, providing integration with multiple data pipelines that can be triggered on Amazon EMR directly from the UI.",
     image: ENIM,
     link: "https://github.com/Haabiy/marketplace-fe"
   },
   {
     title: "ENIM ⦿ Marketplace",
-    description: "Django backend backend platform where data is sold. Django backend backend platform where data is sold",
+    description: "Django backend platform designed for managing data showcasing and interactions, integrating with multiple data pipelines that can be triggered directly from the React UI.",
     image: ENIM,
     link: "https://github.com/Haabiy/marketplace-be"
   },
   {
     title: "EMR Runner",
-    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    description: "Flask-based application for testing data pipelines, enabling job triggers on Amazon EMR, with scripts hosted on S3 and triggered via Postman.",
     image: EMR,
     link: "https://github.com/Haabiy/EMRRunner"
   },
   {
     title: "Tailwind-Playground",
-    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    description: "A testing environment to explore the Tailwind CSS framework and become familiar with utilizing utility classes, in contrast to component-based classes.(E.g: Bootstrap)",
     image: Tailwind,
     link: "https://github.com/Haabiy/Tailwind-Playground"
   },
   {
     title: "To-doX",
-    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    description: "A to-do list application designed to understand backend development, focusing on mastering CRUD operation tasks, database management and user authentication.",
     image: Todox,
     link: "https://github.com/Haabiy/To-doX"
   },
   {
     title: "FlaskStringify",
-    description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
+    description: "A string processing API designed for extensibility to various scenarios, particularly in data engineering pipelines. It focuses on implementing Pythonic tests.",
     image: FlaskStringify,
     link: "https://github.com/Haabiy/FlaskStringify"
   }

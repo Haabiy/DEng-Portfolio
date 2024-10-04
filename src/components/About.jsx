@@ -155,7 +155,7 @@ const About = () => {
             {/* Recommendation 4 */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
               <FaQuoteLeft className="text-white text-2xl mb-4" />
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300 mb-10">
                 "Abiy produced stellar work throughout his internship, be it web-scraping complex websites or wrangling data to deliver value. 
                 He is very curious, and showed himself eager to learn new tools and technique to apply to his tasks. 
                 It has been a pleasure working and exchanging with him!"
