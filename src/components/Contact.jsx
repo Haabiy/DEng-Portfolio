@@ -11,8 +11,9 @@ const Contact = () => {
         <h3 className="text-4xl font-bold text-blue-400 mb-8">Get in Touch</h3>
 
         <p className="text-gray-400 text-lg mb-12 max-w-3xl mx-auto">
-          Whether you have a question or just want to say hi, my inbox is always open. 
-          Drop me a line, and let's start a conversation. I'd love to hear from you.
+            Have a question or want to connect? I'm just a message away! 
+            Let’s chat on LinkedIn;
+            <div>I’d love to hear from you.</div>
         </p>
 
         {/* Call to Action */}
