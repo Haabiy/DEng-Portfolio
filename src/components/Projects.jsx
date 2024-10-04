@@ -32,7 +32,7 @@ const projects = [
     link: "https://github.com/Haabiy/Tailwind-Playground"
   },
   {
-    title: "TodoX",
+    title: "To-doX",
     description: "A cloud data warehouse architecture built with AWS Redshift for scalable big data analytics.",
     image: Todox,
     link: "https://github.com/Haabiy/To-doX"
@@ -49,7 +49,10 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-6 bg-gray-900 relative">
       <div className="container mx-auto">
-        <h3 className="text-4xl text-white font-extrabold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-purple-600 animate-fade-in-up">
+        <h3 className="text-4xl text-white font-extrabold text-center mb-12 
+                       text-transparent bg-clip-text 
+                       bg-gradient-to-r from-blue-400 via-blue-500 to-purple-600 
+                       animate-fade-in-up hover:text-blue-400 transition duration-300 hover:cursor-pointer">
           Personal Projects
         </h3>
 

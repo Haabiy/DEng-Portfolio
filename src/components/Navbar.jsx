@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent p-4 fixed w-full top-0 z-50 transition-all duration-300">
+    <nav className="bg-transparent p-4 fixed w-full top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl text-white font-bold">
@@ -59,46 +59,51 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Menu Links */}
-        <ul className="hidden md:flex space-x-8 text-white text-lg">
-          <li>
+        {/* Menu Links with Horizontal Bar Effect */}
+        <ul className="hidden md:flex space-x-8 text-white text-lg relative">
+          <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-purple-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+          <li className="group">
             <Link
               to="hero"
               smooth={true}
               duration={500}
-              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer"
+              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer relative"
             >
               Home
+              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-purple-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
             </Link>
           </li>
-          <li>
+          <li className="group">
             <Link
               to="about"
               smooth={true}
               duration={500}
-              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer"
+              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer relative"
             >
               About
+              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-purple-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
             </Link>
           </li>
-          <li>
+          <li className="group">
             <Link
               to="projects"
               smooth={true}
               duration={500}
-              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer"
+              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer relative"
             >
               Projects
+              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-purple-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
             </Link>
           </li>
-          <li>
+          <li className="group">
             <Link
-              to="contact" 
+              to="contact"
               smooth={true}
               duration={500}
-              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer"
+              className="hover:text-blue-400 transition duration-300 hover:cursor-pointer relative"
             >
               Contact Me
+              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-purple-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
             </Link>
           </li>
         </ul>
@@ -137,7 +142,7 @@ const Navbar = () => {
             Projects
           </Link>
           <Link
-            to="contact" 
+            to="contact"
             smooth={true}
             duration={500}
             className="text-white text-2xl hover:text-blue-400 transition duration-300 hover:cursor-pointer"

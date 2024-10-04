@@ -7,7 +7,7 @@ const About = () => {
       {/* About Me Section */}
       <section id="about" className="py-20 px-6 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
         <div className="container mx-auto">
-          <h3 className="text-4xl font-bold text-center text-white mb-8">About Me</h3>
+          <h3 className="text-4xl font-bold text-center text-white hover:text-blue-400 transition duration-300 hover:cursor-pointer mb-8">About Me</h3>
           <p className="text-lg text-gray-300 text-center mb-12 max-w-2xl mx-auto">
             I specialize in transforming raw data into valuable insights through modern data engineering tools and techniques.
           </p>
@@ -22,7 +22,7 @@ const About = () => {
                 <h5 className="font-bold text-lg">Centrale Nantes</h5>
                 <p>BSc in Engineering</p>
                 <p>Nantes, France</p>
-                <p className="text-sm text-gray-400">Top 5 grande écoles in France</p>
+                <p className="text-sm text-gray-400">Top 5 in France</p>
               </div>
             </div>
 
@@ -44,7 +44,7 @@ const About = () => {
 
           {/* Experiences Section */}
           <div className="mt-12">
-            <h4 className="text-4xl font-bold text-center text-white mb-8">Experience</h4>
+            <h4 className="text-4xl font-bold text-center text-white hover:text-blue-400 transition duration-300 hover:cursor-pointer mb-8">Experience</h4>
             <div className="relative pl-6">
               <div className="absolute w-1 h-full bg-white left-0 transform -translate-x-1/2"></div>
 
@@ -71,7 +71,7 @@ const About = () => {
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
                   <h5 className="text-xl font-semibold text-white">Growth/Data Engineer @ Fifteen</h5>
                   <p className="text-gray-300">Vanves, France | Jan 2023 – Jul 2024</p>
-                  <p className="mt-2 text-gray-400">Instrumental in developing data products and building algorithms for seamless integration.</p>
+                  <p className="mt-2 text-gray-400">Architected data pipelines, built automation tools, and conducted competitive analysis for improved targeting and efficiency..</p>
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ const About = () => {
 {/* Featured by Mangabey Section */}
 <section id="featured" className="py-20 px-6 bg-gray-800 relative text-white">
   <div className="container mx-auto relative z-10">
-    <h3 className="text-4xl font-bold text-center text-white mb-12">Featured by Mangabey</h3>
+    <h3 className="text-4xl font-bold text-center text-white hover:text-blue-400 transition duration-300 hover:cursor-pointer mb-12">Featured by Mangabey</h3>
     <div className="relative p-8 bg-opacity-90 bg-gray-900 rounded-lg shadow-lg text-center">
       {/* Featured Text */}
       <p className="text-lg italic z-10 relative mb-5">
@@ -109,16 +109,19 @@ const About = () => {
       {/* Recommendations Section */}
       <section id="recommendations" className="py-20 px-6 bg-gray-900">
         <div className="container mx-auto">
-          <h3 className="text-4xl font-bold text-center text-white mb-8">Recommendations</h3>
+          <h3 className="text-4xl font-bold text-center text-white mb-8 hover:text-blue-400 transition duration-300 hover:cursor-pointer">Recommendations</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Recommendation 1 */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
               <FaQuoteLeft className="text-white text-2xl mb-4" />
               <p className="text-gray-300 mb-4">
-                "Abiy is a motivated data engineer known for his quick learning and readiness to tackle challenges."
+                "I had the pleasure of managing Abiy as his team lead. Abiy is a motivated data engineer known for his quick learning 
+                and readiness to tackle challenges. His diverse skill set, ranging from Python and SQL to AWS data stack, 
+                showcases his adaptability and eagerness to learn and grow in any fast-paced environment."
               </p>
               <h5 className="text-lg font-semibold text-white">Hammad Aslam KHAN</h5>
-              <p className="text-sm text-gray-400">Data Engineering & Architecture | Dataflick</p>
+              <p className="text-sm text-gray-400">Data Engineering & Architecture at Mangabey</p>
+              <p className="text-sm text-gray-400">© 2024</p>
               <FaQuoteRight className="text-white text-2xl mt-4" />
             </div>
 
@@ -126,10 +129,40 @@ const About = () => {
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
               <FaQuoteLeft className="text-white text-2xl mb-4" />
               <p className="text-gray-300 mb-4">
-                "Abiy's quick-thinking contributed to efficient problem-solving in critical situations."
+                "I had the pleasure of working with Abiy, a highly skilled Data Engineer who excelled in our fast-paced environment. 
+                His adaptability and ability to simplify complex issues made him indispensable during high-pressure situations. 
+                Abiy’s collaborative spirit and knack for making data accessible significantly boosted our project success."
               </p>
               <h5 className="text-lg font-semibold text-white">Christelle Depierre-Barrault</h5>
-              <p className="text-sm text-gray-400">Program Director</p>
+              <p className="text-sm text-gray-400">Program Director at Mangabey</p>
+              <p className="text-sm text-gray-400">© 2023</p>
+              <FaQuoteRight className="text-white text-2xl mt-4" />
+            </div>
+
+            {/* Recommendation 3 */}
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <FaQuoteLeft className="text-white text-2xl mb-4" />
+              <p className="text-gray-300 mb-4">
+                "We have been lucky to have Abiy on the Fifteen marketing team for his final year internship, where he successfully helped us identify more leads, and qualify them, using data scraping techniques. 
+                Abiy is easy to work with, he has good technical skills and a relentless motivation to learn new things."
+              </p>
+              <h5 className="text-lg font-semibold text-white">Damien Brunet</h5>
+              <p className="text-sm text-gray-400">CMO at Fifteen</p>
+              <p className="text-sm text-gray-400">© 2022</p>
+              <FaQuoteRight className="text-white text-2xl mt-4" />
+            </div>
+
+            {/* Recommendation 4 */}
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+              <FaQuoteLeft className="text-white text-2xl mb-4" />
+              <p className="text-gray-300 mb-4">
+                "Abiy produced stellar work throughout his internship, be it web-scraping complex websites or wrangling data to deliver value. 
+                He is very curious, and showed himself eager to learn new tools and technique to apply to his tasks. 
+                It has been a pleasure working and exchanging with him!"
+              </p>
+              <h5 className="text-lg font-semibold text-white">Francesco Cusimano</h5>
+              <p className="text-sm text-gray-400">Data Scientist at Fifteen</p>
+              <p className="text-sm text-gray-400">© 2022</p>
               <FaQuoteRight className="text-white text-2xl mt-4" />
             </div>
 
