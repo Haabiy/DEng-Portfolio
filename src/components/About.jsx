@@ -1,5 +1,30 @@
 import React from 'react';
 import { FaGraduationCap, FaCertificate, FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+import Python from '../Assets/Skills/Python.svg'
+import ApacheAirflow from '../Assets/Skills/ApacheAirflow.svg'
+import ApacheSpark from '../Assets/Skills/ApacheSpark.svg'
+import CPP from '../Assets/Skills/CPP.svg'
+import CSSName from '../Assets/Skills/CSS.svg'
+import Django from '../Assets/Skills/Django.svg'
+import EC2 from '../Assets/Skills/EC2.svg'
+import EMR from '../Assets/Skills/EMR.svg'
+import HTMLName from '../Assets/Skills/HTML.svg'
+import MATLAB from '../Assets/Skills/MATLAB.svg'
+import PBI from '../Assets/Skills/PBI.svg'
+import ReactJsName from '../Assets/Skills/ReactJs.svg'
+import SQL from '../Assets/Skills/SQL.svg'
+import VBA from '../Assets/Skills/VBA.svg'
+import Bootstrap from '../Assets/Skills/Bootstrap.svg'
+import FlaskName from '../Assets/Skills/Flask.svg'
+import ApacheNIFI from '../Assets/Skills/ApacheNIFI.svg'
+import Databricks from '../Assets/Skills/Databricks.svg'
+import MINIO from '../Assets/Skills/MINIO.svg'
+import Trino from '../Assets/Skills/Trino.svg'
+
+
+
+
+
 
 const About = () => {
   return (
@@ -71,7 +96,7 @@ const About = () => {
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
                   <h5 className="text-xl font-semibold text-white">Growth/Data Engineer @ Fifteen</h5>
                   <p className="text-gray-300">Vanves, France | Jan 2023 – Jul 2024</p>
-                  <p className="mt-2 text-gray-400">Architected data pipelines, built automation tools, and conducted competitive analysis for improved targeting and efficiency..</p>
+                  <p className="mt-2 text-gray-400">Architected data pipelines, built automation tools, and conducted competitive analysis for improved targeting and efficiency.</p>
                 </div>
               </div>
 
@@ -80,29 +105,117 @@ const About = () => {
           </div>
         </div>
       </section>
+      {/* Skills Section */}
+      <section id="skills" className="py-20 px-6 bg-gray-800 text-white">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center  text-white hover:text-blue-400 transition duration-300 hover:cursor-pointer mb-8">Skills</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="flex flex-col items-center">
+              <img src={Python} alt="Python" className="w-16 h-16 mb-2" />
+              <span>Python</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img src={SQL} alt="SQL" className="w-16 h-16 mb-2" />
+              <span>SQL</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img src={ApacheSpark} alt="ApacheSpark" className="w-16 h-16 mb-2" />
+              <span>Pyspark ⦿ SQL ⦿ Scala</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <img src={ApacheAirflow} alt="Apache Airflow" className="w-16 h-16 mb-2" />
+              <span>Apache Airflow</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={ApacheNIFI} alt="Apache NIFI" className="w-16 h-16 mb-2" />
+              <span>Apache NiFi</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={EC2} alt="ec2" className="w-16 h-16 mb-2" />
+              <span>AWS EC2</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={EMR} alt="EMR" className="w-16 h-16 mb-2" />
+              <span>EMR</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={Databricks} alt="Databricks" className="w-16 h-16 mb-2" />
+              <span>Databricks</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={MINIO} alt="MINIO" className="w-16 h-16 mb-2" />
+              <span>MINIO</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={Trino} alt="Trino" className="w-16 h-16 mb-2" />
+              <span>Trino</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={HTMLName} alt="HTML" className="w-16 h-16 mb-2" />
+              <span>HTML</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={CSSName} alt="Tailwind CSS" className="w-16 h-16 mb-2" />
+              <span>Tailwind CSS</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={Bootstrap} alt="Bootstrap" className="w-16 h-16 mb-2" />
+              <span>Bootstrap</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={ReactJsName} alt="React Js" className="w-16 h-16 mb-2" />
+              <span>React JS</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={Django} alt="Python" className="w-16 h-16 mb-2" />
+              <span>Django</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={FlaskName} alt="Django" className="w-16 h-16 mb-2" />
+              <span>Flask</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={PBI} alt="PBI" className="w-16 h-16 mb-2" />
+              <span>Power BI</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={CPP} alt="C++" className="w-16 h-16 mb-2" />
+              <span>C++</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={MATLAB} alt="MATLAB" className="w-16 h-16 mb-2" />
+              <span>MATLAB</span>
+            </div>
+            <div className="flex flex-col items-center">
+            <img src={VBA} alt="VBA" className="w-16 h-16 mb-2" />
+              <span>Excel VBA</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-{/* Featured by Mangabey Section */}
-<section id="featured" className="py-20 px-6 bg-gray-800 relative text-white">
-  <div className="container mx-auto relative z-10">
-    <h3 className="text-4xl font-bold text-center text-white hover:text-blue-400 transition duration-300 hover:cursor-pointer mb-12">Featured by Mangabey</h3>
-    <div className="relative p-8 bg-opacity-90 bg-gray-900 rounded-lg shadow-lg text-center">
-      {/* Featured Text */}
-      <p className="text-lg italic z-10 relative mb-5">
-        "Meet Abiy DEMA, our talented Data Engineer at Mangabey 🚀 Since joining our team in January 2023, Abiy has been instrumental in crafting the backbone of our data product development..."
-      </p>
+      {/* Featured by Mangabey Section */}
+      <section id="featured" className="py-20 px-6 bg-gray-800 relative text-white">
+        <div className="container mx-auto relative z-10">
+          <h3 className="text-4xl font-bold text-center text-white hover:text-blue-400 transition duration-300 hover:cursor-pointer mb-12">Featured by Mangabey</h3>
+          <div className="relative p-8 bg-opacity-90 bg-gray-900 rounded-lg shadow-lg text-center">
+            {/* Featured Text */}
+            <p className="text-lg italic z-10 relative mb-5">
+              "Meet Abiy DEMA, our talented Data Engineer at Mangabey 🚀 Since joining our team in January 2023, Abiy has been instrumental in crafting the backbone of our data product development..."
+            </p>
 
-      {/* See More Button */}
-      <a
-        href="https://www.linkedin.com/posts/mangabey_consulting_services_mangabey-healthdata-pharma-activity-7176127782748344320-IB5G?utm_source=share&utm_medium=member_desktop"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
-      >
-        See More on LinkedIn
-      </a>
-    </div>
-  </div>
-</section>
+            {/* See More Button */}
+            <a
+              href="https://www.linkedin.com/posts/mangabey_consulting_services_mangabey-healthdata-pharma-activity-7176127782748344320-IB5G?utm_source=share&utm_medium=member_desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
+            >
+              See More on LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
 
 
 
