@@ -22,6 +22,8 @@ import { ReactComponent as Databricks } from '../Assets/Skills/Databricks.svg';
 import { ReactComponent as MINIO } from '../Assets/Skills/MINIO.svg';
 import { ReactComponent as Trino } from '../Assets/Skills/Trino.svg';
 
+import CEOTestimonial from './Testimonial.jsx'
+
 const MotionCard = ({ children, delay = 0 }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
@@ -189,6 +191,9 @@ const About = () => {
             <SkillIcon Icon={VBA} name="Excel VBA" />
           </div>
           </div>
+      </section>
+      <section>
+        <CEOTestimonial />
       </section>
       {/* Featured by Mangabey Section */}
       <section id="featured" className="py-20 px-6 bg-gray-800 relative text-white">
