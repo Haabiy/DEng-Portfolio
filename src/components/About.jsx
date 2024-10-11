@@ -196,7 +196,7 @@ const About = () => {
           <h3 className="text-4xl font-bold text-center text-blue-400 hover:cursor-pointer mb-12">Featured by Mangabey</h3>
           <div className="relative p-8 bg-opacity-90 bg-gray-900 rounded-lg shadow-lg text-center">
             {/* Featured Text */}
-            <p className="text-lg italic z-10 relative mb-5">
+            <p className="text-lg md:text-center italic z-10 relative mb-5">
               "🎉 Meet Abiy DEMA, our talented Data Engineer at Mangabey 🚀 Since joining our team in January 2023, Abiy has been instrumental in crafting the backbone of our data product development. 
               🏆 His expertise in building strong algorithms ensures seamless integration and robust pipelines, guaranteeing top-notch data quality for informed decision-making. 
               📊 But it’s not just about technical prowess – Abiy brings a refreshing blend of professionalism, passion, and a delightful sense of humor to our data-driven world every single day! 😄"
