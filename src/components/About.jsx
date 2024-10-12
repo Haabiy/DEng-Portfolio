@@ -23,11 +23,12 @@ const About = () => {
     <>
       {/* About Me Section */}
       <motion.section
+      id='about'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="py-20 px-6 bg-gray-900 text-white"
-    >
+      >
       <div className="container mx-auto">
         <motion.h3
           initial={{ opacity: 0, y: -20 }}
@@ -149,6 +150,7 @@ const About = () => {
       <FeaturedSection/>
       {/* Recommendations Section */}
       <Recommendations/>
+      
     </>
   );
 };
