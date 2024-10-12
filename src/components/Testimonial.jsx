@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { FaPlay, FaPause, FaQuoteLeft, FaQuoteRight, FaTrophy, FaForward, FaBackward } from 'react-icons/fa';
 import videoSource from '../Assets/Achievement/CEO-Mangabey.mp4';
 import AwardImage from '../Assets/Achievement/Award.png';
@@ -8,7 +8,6 @@ import Certificate from '../Assets/Achievement/Certificate.pdf';
 const CEOTestimonial = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isHovering, setIsHovering] = useState(false);
 
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -17,6 +16,10 @@ const CEOTestimonial = () => {
       videoRef.current.play();
     }
     setIsPlaying(!isPlaying);
+  };
+
+  const handleVideoClick = () => {
+    handlePlayPause();
   };
 
   const handleForward = () => {
@@ -85,9 +88,8 @@ const CEOTestimonial = () => {
           >
             <h4 className="text-2xl font-semibold text-blue-300 mb-8">Award Ceremony Highlights</h4>
             <div 
-              className="relative aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden"
-              onMouseEnter={() => setIsHovering(true)}
-              onMouseLeave={() => setIsHovering(false)}
+              onClick={handleVideoClick}
+              className="relative aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden cursor-pointer"
             >
               <video
                 ref={videoRef}
@@ -98,50 +100,54 @@ const CEOTestimonial = () => {
               >
                 Your browser does not support the video tag.
               </video>
-              <AnimatePresence>
-                {isHovering && (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50"
+              <div 
+                className={`absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 ${isPlaying ? 'opacity-0' : 'opacity-100'} transition-opacity duration-200`}
+              >
+                <div 
+                  className="flex space-x-4"
+                >
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={(e) => {
+                      e.stopPropagation(); // Prevent click event from bubbling up to container
+                      handleBackward();
+                    }}
+                    className="text-white p-2 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors duration-200"
                   >
-                    <div className="flex space-x-4">
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={handleBackward}
-                        className="text-white p-2 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors duration-200"
-                      >
-                        <FaBackward />
-                      </motion.button>
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={handlePlayPause}
-                        className="text-white p-2 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors duration-200"
-                      >
-                        {isPlaying ? <FaPause /> : <FaPlay />}
-                      </motion.button>
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={handleForward}
-                        className="text-white p-2 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors duration-200"
-                      >
-                        <FaForward />
-                      </motion.button>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                    <FaBackward />
+                  </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={(e) => {
+                      e.stopPropagation(); // Prevent click event from bubbling up to container
+                      handlePlayPause();
+                    }}
+                    className="text-white p-2 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors duration-200"
+                  >
+                    {isPlaying ? <FaPause /> : <FaPlay />}
+                  </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={(e) => {
+                      e.stopPropagation(); // Prevent click event from bubbling up to container
+                      handleForward();
+                    }}
+                    className="text-white p-2 rounded-full bg-blue-500 hover:bg-blue-600 transition-colors duration-200"
+                  >
+                    <FaForward />
+                  </motion.button>
+                </div>
+              </div>
             </div>
             <p className="text-gray-400 text-lg">
               Watch the highlights from the award ceremony where our CEO recognizes outstanding contributions to the company.
             </p>
           </motion.div>
         </div>
-        
+
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
