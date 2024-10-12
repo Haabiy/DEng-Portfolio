@@ -4,6 +4,7 @@ import { FaPlay, FaPause, FaQuoteLeft, FaQuoteRight, FaTrophy, FaForward, FaBack
 import videoSource from '../Assets/Achievement/CEO-Mangabey.mp4';
 import AwardImage from '../Assets/Achievement/Award.png';
 import Certificate from '../Assets/Achievement/Certificate.pdf';
+import ProfilePhoto from '../Assets/Achievement/Moktar-Diallo.png'; // Replace with your actual image path
 
 const CEOTestimonial = () => {
   const videoRef = useRef(null);
@@ -68,11 +69,17 @@ const CEOTestimonial = () => {
               <FaQuoteRight className="text-blue-400 text-3xl absolute bottom-0 right-0" />
             </div>
             <motion.div 
-              className="mt-8 text-right"
+              className="mt-8 text-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
+              {/* Add profile photo here */}
+              <img 
+                src={ProfilePhoto} 
+                alt="Moktar Diallo" 
+                className="rounded-full w-24 h-24 mx-auto mb-4"
+              />
               <p className="text-blue-300 font-semibold text-xl">Moktar Diallo</p>
               <p className="text-gray-400">CEO, Mangabey</p>
               <p className="text-gray-500 mt-2">Data Architecture and Business Intelligence Specialist</p>
