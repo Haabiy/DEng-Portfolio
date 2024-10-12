@@ -56,7 +56,7 @@ const CEOTestimonial = () => {
             </div>
             <div className="relative">
               <FaQuoteLeft className="text-blue-400 text-3xl absolute top-0 left-0" />
-              <p className="text-gray-300 italic ml-10 mr-10 mb-6 text-justify text-lg leading-relaxed">
+              <p className="text-gray-300 italic ml-10 mr-10 mb-6 text-center text-lg leading-relaxed">
                 "That person has been with the organisation for a year, and while many of us are learning and taking Udemy courses to gain new knowledge, 
                 he consistently goes the extra mile by earning certifications. He's perhaps a <span className='text-blue-400 font-bold'>GENIUS</span> in those areas (Data/Software Engineering), and 
                 I've heard his manager say that he's consistently exceeding expectations and accomplishing more than what was expected of him, and beyond that, he's truly a gentleman."

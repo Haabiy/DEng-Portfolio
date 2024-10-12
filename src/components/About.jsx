@@ -68,7 +68,7 @@ const About = () => {
               {[
                 { name: "Web Security with Django", issuer: "Udemy", date: "Jun 2024" },
                 { name: "Tailwind CSS", issuer: "Udemy", date: "May 2024" },
-                { name: "Backend Development with Django", issuer: "Udemy", date: "Mar 2024" },
+                { name: "Django Backend Development", issuer: "Udemy", date: "Mar 2024" },
                 { name: "Data Engineering Essentials", issuer: "Udemy", date: "Feb 2024" },
                 { name: "Analyzing and Visualizing Data with Power BI", issuer: "Udemy", date: "Jun 2023" },
               ].map((cert, index) => (

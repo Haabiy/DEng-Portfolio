@@ -10,7 +10,7 @@ const FeaturedSection = () => {
       id="featured"
       className="py-20 px-6 bg-gray-900 text-white"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto text-center">
         <motion.h3
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
