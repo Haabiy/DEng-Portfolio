@@ -39,7 +39,7 @@ const CEOTestimonial = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold text-center text-blue-400 mb-16"
+          className="text-4xl font-bold text-center text-blue-400 mb-16"
         >
           Recognition & Achievement
         </motion.h3>
@@ -52,14 +52,14 @@ const CEOTestimonial = () => {
           >
             <div className="flex items-center mb-8">
               <FaTrophy className="text-yellow-400 text-5xl mr-6" />
-              <h4 className="text-3xl font-semibold text-blue-300">Outstanding Contribution Award</h4>
+              <h4 className="text-2xl font-semibold text-blue-300">Outstanding Contribution Award</h4>
             </div>
             <div className="relative">
               <FaQuoteLeft className="text-blue-400 text-3xl absolute top-0 left-0" />
-              <p className="text-gray-300 italic ml-10 mr-10 mb-6 text-justify text-lg leading-relaxed">
-                "That person has been with the organisation for a year, and while many of us are learning and taking Udemy courses to gain new knowledge, 
+              <p className="text-gray-300 italic ml-10 mr-10 mb-6 text-center text-lg leading-relaxed">
+                That person has been with the organisation for a year, and while many of us are learning and taking Udemy courses to gain new knowledge, 
                 he consistently goes the extra mile by earning certifications. He's perhaps a <span className='text-blue-400 font-bold'>GENIUS</span> in those areas (Data/Software Engineering), and 
-                I've heard his manager say that he's consistently exceeding expectations and accomplishing more than what was expected of him, and beyond that, he's truly a gentleman."
+                I've heard his manager say that he's consistently exceeding expectations and accomplishing more than what was expected of him, and beyond that, he's truly a gentleman.
               </p>
               <FaQuoteRight className="text-blue-400 text-3xl absolute bottom-0 right-0" />
             </div>
@@ -82,7 +82,7 @@ const CEOTestimonial = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="bg-gray-800 p-10 rounded-2xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-300"
           >
-            <h4 className="text-3xl font-semibold text-blue-300 mb-8">Award Ceremony Highlights</h4>
+            <h4 className="text-2xl font-semibold text-blue-300 mb-8">Award Ceremony Highlights</h4>
             <div 
               className="relative aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden"
               onMouseEnter={() => setIsHovering(true)}
