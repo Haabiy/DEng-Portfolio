@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="bg-transparent p-4 fixed w-full top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl text-white font-bold">
+        <div className="text-2xl text-white font-bold cursor-pointer">
           <Link to="hero" smooth={true} duration={500} onClick={() => setIsOpen(false)}>
             Data 🫰🏾 Engineering
           </Link>
