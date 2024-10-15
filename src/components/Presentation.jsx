@@ -106,7 +106,7 @@ const Presentation = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            Watch key highlights from my presentation on Large Language Models. Get a quick overview of LLMs and their game-changing potential across industries.
+            Watch key highlights from my presentation on Large Language Models.
           </motion.p>
         </motion.div>
       </div>
