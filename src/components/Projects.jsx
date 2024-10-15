@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import ENIM from '../Assets/ENIM.png';
 import Tailwind from '../Assets/Tailwind.png';
 import EMR from '../Assets/EMR.png';
@@ -46,8 +46,15 @@ const projects = [
 ];
 
 const Projects = () => {
+  const ProjectsRef = useRef(null);
+
+  useEffect(() => {
+    if (window.location.hash === '#recommendations' && ProjectsRef.current) {
+      ProjectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
   return (
-    <section id="projects" className="py-20 px-6 bg-gray-900 relative">
+    <section id="projects" ref={ProjectsRef} className="py-20 px-6 bg-gray-900 relative">
       <div className="container mx-auto">
         <h3 className="text-4xl text-white font-extrabold text-center mb-12 
                        text-transparent bg-clip-text 

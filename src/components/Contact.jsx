@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import { FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
+  const ContactRef = useRef(null);
+
+  // Scroll into view when #ContactRef hash is present
+  useEffect(() => {
+    if (window.location.hash === '#contact' && ContactRef.current) {
+      ContactRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
   return (
     <section
       id="contact"
+      ref={ContactRef}
       className="bg-gradient-to-b from-gray-900 to-black text-white py-20"
     >
       <div className="container mx-auto px-6 text-center">

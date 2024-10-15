@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const RecommendationCard = ({ quote, name, position, year }) => (
@@ -15,6 +15,14 @@ const RecommendationCard = ({ quote, name, position, year }) => (
 );
 
 const Recommendations = () => {
+    const recommRef = useRef(null);
+
+    // Scroll into view when #skills hash is present
+    useEffect(() => {
+      if (window.location.hash === '#recommendations' && recommRef.current) {
+        recommRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, []);
   const recommendations = [
     {
       quote: "I had the pleasure of managing Abiy as his team lead. Abiy is a motivated data engineer known for his quick learning and readiness to tackle challenges. His diverse skill set, ranging from Python and SQL to AWS data stack, showcases his adaptability and eagerness to learn and grow in any fast-paced environment.",
@@ -43,7 +51,7 @@ const Recommendations = () => {
   ];
 
   return (
-    <section id="recommendations" className="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
+    <section id="recommendations" ref={recommRef} className="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
       <div className="container mx-auto">
         <h3 className="text-4xl font-bold text-center text-white mb-12 hover:text-blue-400 transition duration-300 cursor-pointer">
           Recommendations

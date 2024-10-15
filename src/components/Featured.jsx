@@ -1,13 +1,22 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import { motion } from 'framer-motion';
 
 const FeaturedSection = () => {
+  const FeaturedSectionRef = useRef(null);
+
+  // Scroll into view when #featured hash is present
+  useEffect(() => {
+    if (window.location.hash === '#FeaturedSection' && FeaturedSectionRef.current) {
+      FeaturedSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
   return (
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       id="featured"
+      ref={FeaturedSectionRef}
       className="py-20 px-6 bg-gray-900 text-white"
     >
       <div className="container mx-auto text-center">
