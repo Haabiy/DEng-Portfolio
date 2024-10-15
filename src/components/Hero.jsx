@@ -8,7 +8,7 @@ const Hero = () => {
 
   // Scroll into view when #skills hash is present
   useEffect(() => {
-    if (window.location.hash === '#recommendations' && HeroRef.current) {
+    if (window.location.hash === '#hero' && HeroRef.current) {
       HeroRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);

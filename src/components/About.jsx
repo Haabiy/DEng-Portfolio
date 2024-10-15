@@ -23,7 +23,7 @@ const About = () => {
 
   // Scroll into view when #AboutRef hash is present
   useEffect(() => {
-    if (window.location.hash === '#recommendations' && AboutRef.current) {
+    if (window.location.hash === '#about' && AboutRef.current) {
       AboutRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
