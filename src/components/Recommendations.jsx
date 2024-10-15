@@ -53,7 +53,7 @@ const Recommendations = () => {
   return (
     <section id="recommendations" ref={recommRef} className="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
       <div className="container mx-auto">
-        <h3 className="text-4xl font-bold text-center text-white mb-12 hover:text-blue-400 transition duration-300 cursor-pointer">
+        <h3 className="text-4xl font-bold text-center text-blue-400 mb-12 cursor-pointer">
           Recommendations
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -49,17 +49,14 @@ const Projects = () => {
   const ProjectsRef = useRef(null);
 
   useEffect(() => {
-    if (window.location.hash === '#recommendations' && ProjectsRef.current) {
+    if (window.location.hash === '#projects' && ProjectsRef.current) {
       ProjectsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
   return (
     <section id="projects" ref={ProjectsRef} className="py-20 px-6 bg-gray-900 relative">
       <div className="container mx-auto">
-        <h3 className="text-4xl text-white font-extrabold text-center mb-12 
-                       text-transparent bg-clip-text 
-                       bg-gradient-to-r from-blue-400 via-blue-500 to-purple-600 
-                       animate-fade-in-up hover:text-blue-400 transition duration-300 hover:cursor-pointer">
+        <h3 className="text-4xl font-bold text-blue-400 text-center mb-12 hover:cursor-pointer">
           Personal Projects
         </h3>
 
