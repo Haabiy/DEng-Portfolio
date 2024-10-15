@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 const Hero = () => {
+  const HeroRef = useRef(null);
+
+  // Scroll into view when #skills hash is present
+  useEffect(() => {
+    if (window.location.hash === '#recommendations' && HeroRef.current) {
+      HeroRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
   return (
-    <section id="hero" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+    <section id="hero" ref={HeroRef} className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
       <div className="absolute inset-0 opacity-50">
         <div className="firefly"></div>
         <div className="firefly"></div>

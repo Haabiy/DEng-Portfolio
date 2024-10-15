@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { FaPlay, FaPause, FaQuoteLeft, FaQuoteRight, FaTrophy, FaForward, FaBackward } from 'react-icons/fa';
 import videoSource from '../Assets/Achievement/CEO-Mangabey.mp4';
@@ -9,6 +9,13 @@ import ProfilePhoto from '../Assets/Achievement/Moktar-Diallo.png'; // Replace w
 const CEOTestimonial = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const CEOTestimonialRef = useRef(null);
+
+  useEffect(() => {
+    if (window.location.hash === '#award' && CEOTestimonialRef.current) {
+      CEOTestimonialRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -34,6 +41,7 @@ const CEOTestimonial = () => {
   return (
     <motion.section
       id='award'
+      ref={CEOTestimonialRef}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

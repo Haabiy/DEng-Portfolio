@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import { motion } from 'framer-motion';
 import { FaGraduationCap, FaCertificate, FaBriefcase } from 'react-icons/fa';
 
@@ -19,11 +19,20 @@ const MotionCard = ({ children, delay }) => (
 );
 
 const About = () => {
+  const AboutRef = useRef(null);
+
+  // Scroll into view when #AboutRef hash is present
+  useEffect(() => {
+    if (window.location.hash === '#recommendations' && AboutRef.current) {
+      AboutRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
   return (
     <>
       {/* About Me Section */}
       <motion.section
       id='about'
+      ref={AboutRef}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
