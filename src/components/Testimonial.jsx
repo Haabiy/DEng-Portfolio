@@ -63,7 +63,7 @@ const CEOTestimonial = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="bg-gray-800 p-10 rounded-2xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-300"
           >
-            <div className="flex items-center mb-8">
+            <div className="flex items-center justify-center mb-8">
               <FaTrophy className="text-yellow-400 text-5xl mr-6" />
               <h4 className="text-2xl font-semibold text-blue-300">Outstanding Contribution Award</h4>
             </div>
@@ -101,7 +101,10 @@ const CEOTestimonial = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="bg-gray-800 p-10 rounded-2xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-300"
           >
-            <h4 className="text-2xl font-semibold text-blue-300 mb-8">Award Ceremony Highlights</h4>
+            <div className="flex items-center justify-center">
+              <FaTrophy className="text-yellow-400 text-5xl mr-6 -mt-8" />
+              <h4 className="text-2xl text-center font-semibold text-blue-300 mb-8">Award Ceremony Highlights</h4>
+            </div>
             <div 
               onClick={handleVideoClick}
               className="relative aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden cursor-pointer"
@@ -157,7 +160,7 @@ const CEOTestimonial = () => {
                 </div>
               </div>
             </div>
-            <p className="text-gray-400 text-lg">
+            <p className="text-gray-400 text-center text-lg">
               Watch the highlights from the award ceremony where our CEO recognizes outstanding contributions to the company.
             </p>
           </motion.div>
