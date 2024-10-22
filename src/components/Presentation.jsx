@@ -130,7 +130,7 @@ const Presentation = () => {
             source={videoSource}
             poster={LLM}
             title="Large Language Models"
-            description="Watch key highlights from my presentation on Large Language Models and their applications in modern AI."
+            description="Watch key highlights from my presentation on Large Language Models and their applications."
           />
           <VideoPlayer 
             source={EMRRunnerVideo}
