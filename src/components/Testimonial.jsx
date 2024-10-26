@@ -163,6 +163,17 @@ const CEOTestimonial = () => {
             <p className="text-gray-400 text-center text-lg">
               Watch the highlights from the award ceremony where our CEO recognizes outstanding contributions to the company.
             </p>
+            <motion.div 
+              className="mt-8 text-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+            >
+              <p className="text-blue-300 font-semibold text-xl">Mangabey</p>
+              <p className="text-gray-400">Product-Led Pharmaceutical Startup</p>
+              <p className="text-gray-500 mt-2">Specializing in Data │ Software Engineering</p>
+              <p className="text-gray-500">Paris, France</p>
+            </motion.div>
           </motion.div>
         </div>
 
