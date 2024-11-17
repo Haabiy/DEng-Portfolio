@@ -130,10 +130,10 @@ const Presentation = () => {
         </motion.h3>
         <div className="flex flex-wrap justify-center text-center">
           <VideoPlayer 
-            source={videoSource}
-            poster={LLM}
-            title="Large Language Models"
-            description="Watch key highlights from my presentation on Large Language Models and their applications."
+              source={PIP}
+              poster={PIP_POSTER}
+              title="Python Package "
+              description="pip install emrrunner - A powerful CLI tool and API for managing Spark jobs on Amazon EMR clusters."
           />
           <VideoPlayer 
             source={EMRRunnerVideo}
@@ -142,10 +142,10 @@ const Presentation = () => {
             description="Explore the web application built with a React.js frontend and Django backend"
           />
           <VideoPlayer 
-            source={PIP}
-            poster={PIP_POSTER}
-            title="Python Package "
-            description="pip install emrrunner - A powerful CLI tool and API for managing Spark jobs on Amazon EMR clusters."
+            source={videoSource}
+            poster={LLM}
+            title="Large Language Models"
+            description="Watch key highlights from my presentation on Large Language Models and their applications."
           />
         </div>
       </div>
