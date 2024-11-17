@@ -5,6 +5,9 @@ import videoSource from '../Assets/Achievement/LL.mp4';
 import LLM from '../Assets/Achievement/LLM.png';
 import EMRRunnerImage from '../Assets/EMRRunner.png';
 import EMRRunnerVideo from '../Assets/Achievement/EMRRunner.mp4';
+import PIP from '../Assets/Achievement/pip.mp4';
+import PIP_POSTER from '../Assets/Achievement/pip_poster.png';
+
 
 const Presentation = () => {
   const PresentationRef = useRef(null);
@@ -137,6 +140,12 @@ const Presentation = () => {
             poster={EMRRunnerImage}
             title="ENIM ⦿ Marketplace "
             description="Explore the web application built with a React.js frontend and Django backend"
+          />
+          <VideoPlayer 
+            source={PIP}
+            poster={PIP_POSTER}
+            title="Python Package "
+            description="pip install emrrunner - A powerful CLI tool and API for managing Spark jobs on Amazon EMR clusters."
           />
         </div>
       </div>
