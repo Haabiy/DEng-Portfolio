@@ -157,12 +157,13 @@ const About = () => {
                       <div>
                         <h5 className="text-xl font-semibold text-blue-300">{exp.title}</h5>
                         <p className="text-gray-400 text-sm mb-3">{exp.location} | {exp.date}</p>
-                        {exp.description.map((desc, i) => (
-                        <p key={i} className="mt-2 text-gray-300 text-sm">
-                          {desc}
-                          <div class="h-0.5 w-12 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 my-4"></div>
-                        </p>
-                      ))}
+                        <div className="mt-2 space-y-1 text-gray-300 text-sm">
+                          {exp.description.map((desc, i) => (
+                            <div key={i} className="pl-4 relative before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:rounded-full before:bg-blue-400">
+                              {desc}
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </MotionCard>
