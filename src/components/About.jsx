@@ -124,7 +124,7 @@ const About = () => {
                     ]
                 },
                 {
-                  title: "Data|Backend Engineer @ Mangabey",
+                  title: "Data │ Backend Engineer @ Mangabey",
                   location: "Paris, France",
                   date: "Jan 2023 – August 2024",
                   description: 
@@ -137,7 +137,7 @@ const About = () => {
                     ]
                 },
                 {
-                  title: "Growth/Data Engineer @ Fifteen",
+                  title: "Growth │ Data Engineer @ Fifteen",
                   location: "Vanves, France",
                   date: "Jan 2023 – Jul 2024",
                   description: 
