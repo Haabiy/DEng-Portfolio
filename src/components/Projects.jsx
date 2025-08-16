@@ -7,6 +7,12 @@ import FlaskStringify from '../Assets/FlaskStringify.png';
 
 // Dummy project data
 const projects = [
+    {
+    title: "EMR Runner",
+    description: "Terminal-based UI interface for testing data pipelines, enabling job triggers on Amazon EMR. Also available as a flask application to trigger jobs via Postma.",
+    image: EMR,
+    link: "https://github.com/Haabiy/EMRRunner"
+  },
   {
     title: "ENIM ⦿ Marketplace",
     description: "React js-based UI designed for showcasing and offering data, providing integration with multiple data pipelines that can be triggered on Amazon EMR directly from the UI.",
@@ -18,12 +24,6 @@ const projects = [
     description: "Django backend platform designed for managing data showcasing and interactions, integrating with multiple data pipelines that can be triggered directly from the React UI.",
     image: ENIM,
     link: "https://github.com/Haabiy/marketplace-be"
-  },
-  {
-    title: "EMR Runner",
-    description: "Flask-based application for testing data pipelines, enabling job triggers on Amazon EMR, with scripts hosted on S3 and triggered via Postman.",
-    image: EMR,
-    link: "https://github.com/Haabiy/EMRRunner"
   },
   {
     title: "Tailwind-Playground",

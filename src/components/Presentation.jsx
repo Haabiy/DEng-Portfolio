@@ -144,8 +144,8 @@ const Presentation = () => {
           <VideoPlayer 
             source={videoSource}
             poster={LLM}
-            title="Large Language Models"
-            description="Watch key highlights from my presentation on Large Language Models and their applications."
+            title="Lunch & Learn"
+            description="Watch key highlights from my presentation on ChatGPT"
           />
         </div>
       </div>

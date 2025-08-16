@@ -185,7 +185,7 @@ const CEOTestimonial = () => {
         >
           <h4 className="text-3xl font-semibold text-blue-300 mb-6">My Certification</h4>
           <p className="text-gray-300 mb-8 text-lg">
-            I have also received a certification during Spring Award 2024. You can review it below.
+            I have also received a certification during Spring Award 2024 at Mangabey. You can review it below.
           </p>
           <motion.a
             href={Certificate}

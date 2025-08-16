@@ -62,10 +62,11 @@ const About = () => {
               <FaGraduationCap className="mr-3 text-3xl text-blue-400" /> Education
             </h4>
             <div className="text-gray-300">
-              <h5 className="font-bold text-xl mb-1">Centrale Nantes</h5>
+              <h5 className="font-bold text-xl text-orange-100 mb-1">Centrale Nantes</h5>
+              <a href="https://www.ec-nantes.fr/english-version"><p className="text-md text-blue-300 font-semibold mb-1">Top 3 French School of Engineering(THE 2025)</p></a>
+              <p className="mb-2">Group of Écoles Centrales (School of Engineering)</p>
               <p className="mb-1">BSc in Engineering</p>
               <p className="mb-2">Nantes, France</p>
-              <p className="text-sm text-blue-300 font-semibold">Top 5 in France</p>
             </div>
           </MotionCard>
 
@@ -75,10 +76,10 @@ const About = () => {
             </h4>
             <ul className="space-y-2 text-gray-300">
               {[
-                { name: "⦿ Web Security with Django", issuer: "Udemy", date: "Jun 2024" },
-                { name: "⦿ Tailwind CSS", issuer: "Udemy", date: "May 2024" },
-                { name: "⦿ Django Backend Development", issuer: "Udemy", date: "Mar 2024" },
                 { name: "⦿ Data Engineering Essentials", issuer: "Udemy", date: "Feb 2024" },
+                { name: "⦿ Django Backend Development", issuer: "Udemy", date: "Mar 2024" },
+                { name: "⦿ Tailwind CSS", issuer: "Udemy", date: "May 2024" },
+                { name: "⦿ Web Security with Django", issuer: "Udemy", date: "Jun 2024" },
                 { name: "⦿ Power BI", issuer: "Udemy", date: "Jun 2023" },
               ].map((cert, index) => (
                 <motion.li
@@ -115,19 +116,35 @@ const About = () => {
                   title: "Data Engineer @ Decathlon",
                   location: "Lille, France",
                   date: "Sep 2024 – Present",
-                  description: "Working on improving data pipelines, and providing data-driven insights for product improvement.",
+                    description: 
+                    [
+                      "Developed dktbricks, Python library to enable the team to launch JAR files on Databricks via a terminal-based UI, with configurable options for cluster size and number of worker nodes.",
+                      "Optimised Scala-based data pipelines for the core marketplace data product, efficiently handling large datasets, ensuring smooth data flow, improving performance, enhancing system scalability, and reducing Databricks costs by around 15%.",
+                      "Built a Spark-based ETL pipeline following the Medallion Architecture: implemented API data extraction via AWS Lambda into the Bronze layer, developed Scala-based transformations for Silver and Gold layers with Delta Tables on Databricks, and orchestrated workflows using Airflow for scheduling and triggering jobs across the cluster.",
+                    ]
                 },
                 {
-                  title: "Data Engineer @ Mangabey",
+                  title: "Data|Backend Engineer @ Mangabey",
                   location: "Paris, France",
                   date: "Jan 2023 – August 2024",
-                  description: "Instrumental in developing data products and building algorithms for seamless integration.",
+                  description: 
+                    [
+                      "Designed Python Django-based backend system for MINE application, a data marketplace, featuring APIs for three key components namely notification centre, update centre, and delivery system, tailored to meet end-user needs.",
+                      "Engineered the backend architecture and core functionalities of the MINE application, optimising Spark-based ETL and non-Spark pipelines, which enhanced data processing speed by 40% on the Amazon EMR cluster.",
+                      "Constructed Apache Spark ETL based data pipeline solution utilized by AstraZeneca for executing a comprehensive data quality assessment workflow. This included extracting data from Amazon S3, conducting in-depth analysis, storing the derived insights in Redshift, and establishing seamless real-time visualisation in POWER BI through direct query integration.",
+                      "Implemented Apache NiFi workflow for real-time data ingestion, seamlessly transferring data from S3 to Redshift.",
+                      "Completed a KPI analysis framework using Pandas, later optimising with Polars to achieve a remarkable ~ 90% reduction in execution time, while also orchestrating multiple data pipelines using Apache Airflow within Docker containers for streamlined and efficient data processing."
+                    ]
                 },
                 {
                   title: "Growth/Data Engineer @ Fifteen",
                   location: "Vanves, France",
                   date: "Jan 2023 – Jul 2024",
-                  description: "Architected data pipelines, built automation tools, and conducted competitive analysis for improved targeting and efficiency.",
+                  description: 
+                  [
+                    "Developed a robust data extraction pipeline using Python's Beautiful Soup and Selenium libraries, capturing essential LinkedIn profile details such as names, positions, and locations, resulting in faster targeting for 2500+ ad campaigns each month.",
+                    "Launched a Twitter-Slack bot named Fiftweety, capable of monitoring recent tweets from specified Twitter accounts. It promptly sends notifications to a designated Slack channel whenever tweets meet our selected criteria, such as those containing specific keywords and posted within the last five minutes.",
+                  ]
                 },
               ].map((exp, index) => (
                 <div key={index} className="relative">
@@ -139,8 +156,13 @@ const About = () => {
                       </div>
                       <div>
                         <h5 className="text-xl font-semibold text-blue-300">{exp.title}</h5>
-                        <p className="text-gray-400 text-sm">{exp.location} | {exp.date}</p>
-                        <p className="mt-2 text-gray-300 text-sm">{exp.description}</p>
+                        <p className="text-gray-400 text-sm mb-3">{exp.location} | {exp.date}</p>
+                        {exp.description.map((desc, i) => (
+                        <p key={i} className="mt-2 text-gray-300 text-sm">
+                          {desc}
+                          <div class="h-0.5 w-12 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 my-4"></div>
+                        </p>
+                      ))}
                       </div>
                     </div>
                   </MotionCard>
