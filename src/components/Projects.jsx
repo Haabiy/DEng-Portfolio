@@ -9,7 +9,7 @@ import FlaskStringify from '../Assets/FlaskStringify.png';
 const projects = [
     {
     title: "EMR Runner",
-    description: "Terminal-based UI interface for testing data pipelines, enabling job triggers on Amazon EMR. Also available as a flask application to trigger jobs via Postma.",
+    description: "Terminal-based UI interface for testing data pipelines, enabling job triggers on Amazon EMR. Also available as a flask application to trigger jobs via Postman.",
     image: EMR,
     link: "https://github.com/Haabiy/EMRRunner"
   },
