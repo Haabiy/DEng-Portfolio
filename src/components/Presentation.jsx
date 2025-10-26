@@ -1,8 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaPlay, FaPause, FaForward, FaBackward, FaExpand, FaCompress } from 'react-icons/fa';
-import videoSource from '../Assets/Achievement/LL.mp4';
-import LLM from '../Assets/Achievement/LLM.png';
 import EMRRunnerImage from '../Assets/EMRRunner.png';
 import EMRRunnerVideo from '../Assets/Achievement/EMRRunner.mp4';
 import PIP from '../Assets/Achievement/pip.mp4';
@@ -139,13 +137,7 @@ const Presentation = () => {
             source={EMRRunnerVideo}
             poster={EMRRunnerImage}
             title="ENIM ⦿ Marketplace "
-            description="Explore the web application built with a React.js frontend and Django backend"
-          />
-          <VideoPlayer 
-            source={videoSource}
-            poster={LLM}
-            title="Lunch & Learn"
-            description="Watch key highlights from my presentation on ChatGPT"
+            description="Explore the web application built with a React.js frontend and Django backend deployed on AWS, showcasing seamless integration with the EMR Runner package."
           />
         </div>
       </div>
