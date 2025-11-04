@@ -137,7 +137,7 @@ const Presentation = () => {
             source={EMRRunnerVideo}
             poster={EMRRunnerImage}
             title="ENIM ⦿ Marketplace "
-            description="Explore the web application built with a React.js frontend and Django backend deployed on AWS, showcasing launching jobs on Amazon EMR Cluster."
+            description="Explore the web application built with a React.js frontend and Django backend, showcasing launching jobs on Amazon EMR Cluster."
           />
         </div>
       </div>
