@@ -4,10 +4,17 @@ import Tailwind from '../Assets/Tailwind.png';
 import EMR from '../Assets/EMR.png';
 import Todox from '../Assets/Todox.png';
 import FlaskStringify from '../Assets/FlaskStringify.png';
+import selahx from '../Assets/selahx.png';
 
 // Dummy project data
 const projects = [
-    {
+  {
+    title: "selahx",
+    description: "Remote Access Tool — Fast and lightweight CLI experience, enabling users to execute commands and manage files on remote systems seamlessly.",
+    image: selahx,
+    link: "https://github.com/Haabiy/selahx_client"
+  },
+  {
     title: "EMR Runner",
     description: "Terminal-based UI interface for testing data pipelines, enabling job triggers on Amazon EMR. Also available as a flask application to trigger jobs via Postman.",
     image: EMR,
