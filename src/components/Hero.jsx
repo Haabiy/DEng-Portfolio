@@ -41,7 +41,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="text-2xl md:text-3xl text-gray-300 mb-6"
         >
-          Data Engineer | Turning Data into Actionable Insights
+          Data Engineer | Designing Reliable, High-Performance Data Systems
         </motion.p>
 
         <motion.p 
@@ -50,7 +50,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto"
         >
-          Passionate about building scalable data pipelines, optimizing performance, and delivering insightful solutions for data-driven decision making.
+          Passionate about building scalable, efficient data systems—optimized through FinOps to turn data into actionable insight.
         </motion.p>
 
         <motion.div 
