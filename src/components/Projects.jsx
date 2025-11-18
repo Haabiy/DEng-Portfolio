@@ -12,42 +12,49 @@ const projects = [
     title: "selahx",
     description: "Remote Access Tool — Fast and lightweight CLI experience, enabling users to execute commands and manage files on remote systems seamlessly.",
     image: selahx,
+    concepts: ["Python", "Socket Programming", "Computer Security", "CLI"],
     link: "https://github.com/Haabiy/selahx_client"
   },
   {
     title: "EMR Runner",
     description: "Terminal-based UI interface for testing data pipelines, enabling job triggers on Amazon EMR. Also available as a flask application to trigger jobs via Postman.",
     image: EMR,
+    concepts: ["Python", "AWS EMR", "Flask", "CLI"],
     link: "https://github.com/Haabiy/EMRRunner"
   },
   {
     title: "ENIM ⦿ Marketplace",
     description: "React js-based UI designed for showcasing and offering data, providing integration with multiple data pipelines that can be triggered on Amazon EMR directly from the UI.",
     image: ENIM,
+    concepts: ["React", "JavaScript", "AWS EMR", "Data Pipelines"],
     link: "https://github.com/Haabiy/marketplace-fe"
   },
   {
     title: "ENIM ⦿ Marketplace",
     description: "Django backend platform designed for managing data showcasing and interactions, integrating with multiple data pipelines that can be triggered directly from the React UI.",
     image: ENIM,
+    concepts: ["Django", "Python", "REST API", "AWS EMR"],
     link: "https://github.com/Haabiy/marketplace-be"
   },
   {
     title: "Tailwind-Playground",
     description: "A testing environment to explore the Tailwind CSS framework and become familiar with utilizing utility classes, in contrast to component-based classes.(E.g: Bootstrap)",
     image: Tailwind,
+    concepts: ["Tailwind CSS", "Frontend Development"],
     link: "https://github.com/Haabiy/Tailwind-Playground"
   },
   {
     title: "To-doX",
     description: "A to-do list application designed to understand backend development, focusing on mastering CRUD operation tasks, database management and user authentication.",
     image: Todox,
+    concepts: ["Django", "Python", "PostgreSQL", "CRUD"],
     link: "https://github.com/Haabiy/To-doX"
   },
   {
     title: "FlaskStringify",
     description: "A string processing API designed for extensibility to various scenarios, particularly in data engineering pipelines. It focuses on implementing Pythonic tests.",
     image: FlaskStringify,
+    concepts: ["Flask", "Python"],
     link: "https://github.com/Haabiy/FlaskStringify"
   }
 ];
@@ -95,6 +102,9 @@ const Projects = () => {
                 <h4 className="text-2xl font-semibold text-white mb-3">{project.title}</h4>
                 <p className="text-gray-400 mb-4">
                   {project.description}
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  {project.concepts.join(", ")}
                 </p>
                 <a 
                   href={project.link} 

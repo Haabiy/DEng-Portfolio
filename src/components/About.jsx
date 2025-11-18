@@ -72,10 +72,11 @@ const About = () => {
 
           <MotionCard delay={0.4}>
             <h4 className="text-2xl font-semibold text-blue-300 mb-4 flex items-center">
-              <FaCertificate className="mr-3 text-3xl text-blue-400" /> Certifications
+              <FaCertificate className="mr-3 text-3xl text-blue-400" /> Side Project Certifications
             </h4>
             <ul className="space-y-2 text-gray-300">
               {[
+                { name: "⦿ The Complete 2024 Web Development Bootcamp", issuer: "Udemy", date: "Oct 2024" },
                 { name: "⦿ Data Engineering Essentials", issuer: "Udemy", date: "Feb 2024" },
                 { name: "⦿ Django Backend Development", issuer: "Udemy", date: "Mar 2024" },
                 { name: "⦿ Tailwind CSS", issuer: "Udemy", date: "May 2024" },
