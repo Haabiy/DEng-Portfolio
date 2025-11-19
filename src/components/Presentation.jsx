@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaPlay, FaPause, FaForward, FaBackward, FaExpand, FaCompress } from 'react-icons/fa';
 import EMRRunnerImage from '../Assets/EMRRunner.png';
 import EMRRunnerVideo from '../Assets/Achievement/EMRRunner.mp4';
+import SelahxVideo from '../Assets/Achievement/selahx.mp4';
+import SelahThumbnail from '../Assets/SelahxThumbnail.png';
 import PIP from '../Assets/Achievement/pip.mp4';
 import PIP_POSTER from '../Assets/Achievement/pip_poster.png';
 
@@ -128,9 +130,15 @@ const Presentation = () => {
         </motion.h3>
         <div className="flex flex-wrap justify-center text-center">
           <VideoPlayer 
+              source={SelahxVideo}
+              poster={SelahThumbnail}
+              title="selahx"
+              description="Remote Access Tool — Fast and lightweight CLI experience."
+          />
+          <VideoPlayer 
               source={PIP}
               poster={PIP_POSTER}
-              title="Python Package "
+              title="emrrunner Python Package"
               description="pip install emrrunner - A powerful CLI tool and API for managing Spark jobs on Amazon EMR clusters."
           />
           <VideoPlayer 
