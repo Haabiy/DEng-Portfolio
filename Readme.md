@@ -4,4 +4,4 @@
 
 ---
 
-`url`: https://www.abiydema.com/
+https://www.abiydema.com/
