@@ -1,6 +1,6 @@
 import {useEffect, useRef} from 'react';
 import { FaGithub, FaEnvelope, FaFilePdf } from 'react-icons/fa';
-import cv from '../Assets/cv/Abiy-DEMA-CV.pdf';
+import LatestCV from '../Assets/cv/Abiy_DEMA_CV.pdf';
 
 const Contact = () => {
   const ContactRef = useRef(null);
@@ -59,7 +59,7 @@ const Contact = () => {
             <FaEnvelope className="w-6 h-6" />
           </a>
           <a
-            href={`${process.env.PUBLIC_URL}${cv}`}
+            href={LatestCV}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition duration-300"
