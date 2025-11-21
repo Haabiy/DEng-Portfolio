@@ -59,7 +59,7 @@ const Contact = () => {
             <FaEnvelope className="w-6 h-6" />
           </a>
           <a
-            href={cv}
+            href={`${process.env.PUBLIC_URL}${cv}`}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition duration-300"
