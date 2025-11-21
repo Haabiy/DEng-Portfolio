@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
-import { FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaEnvelope, FaFilePdf } from 'react-icons/fa';
+import cv from '../Assets/cv/Abiy-DEMA-CV.pdf';
 
 const Contact = () => {
   const ContactRef = useRef(null);
@@ -56,6 +57,14 @@ const Contact = () => {
             className="hover:text-white transition duration-300"
           >
             <FaEnvelope className="w-6 h-6" />
+          </a>
+          <a
+            href={cv}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition duration-300"
+          >
+            <FaFilePdf className="w-6 h-6" />
           </a>
         </div>
       </div>
