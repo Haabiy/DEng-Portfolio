@@ -31,7 +31,6 @@ const Contact = () => {
           {/* LinkedIn Button */}
           <a
             href="https://www.linkedin.com/in/abiy-dema/"
-            target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg"
           >
