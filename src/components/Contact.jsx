@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import { FaGithub, FaEnvelope, FaFilePdf } from 'react-icons/fa';
-import cv from '../Assets/CV/Abiy-DEMA-CV.pdf';
+import cv from '../Assets/cv/Abiy-DEMA-CV.pdf';
 
 const Contact = () => {
   const ContactRef = useRef(null);
