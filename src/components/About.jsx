@@ -120,7 +120,7 @@ const About = () => {
                     description: 
                     [
                       "Developed dktbricks, Python library to enable the team to launch JAR files on Databricks via a terminal-based UI, with configurable options for cluster size and number of worker nodes.",
-                      "Optimised Scala-based data pipelines for the core marketplace data product, efficiently handling large datasets, ensuring smooth data flow, improving performance, enhancing system scalability, and reducing Databricks costs by around 15%.",
+                      "Optimised Scala-based data pipelines for the core marketplace data product, enabling efficient processing of large datasets, improving performance and system scalability, and delivering benchmark POCs using Z-ordering and liquid clustering that reduced execution time by 15%.",
                       "Built a Spark-based ETL pipeline following the Medallion Architecture: implemented API data extraction via AWS Lambda into the Bronze layer, developed Scala-based transformations for Silver and Gold layers with Delta Tables on Databricks, and orchestrated workflows using Airflow for scheduling and triggering jobs across the cluster.",
                     ]
                 },
