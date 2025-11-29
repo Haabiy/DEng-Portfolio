@@ -53,7 +53,9 @@ const About = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="text-lg text-gray-300 text-center mb-12 max-w-2xl mx-auto"
         >
-          I specialize in transforming raw data into valuable insights through modern data engineering tools and techniques.
+        Passionately interested in Software Engineering with a focus on data systems, and I enjoy building reliable platforms, 
+        scalable pipelines, and efficient system architectures. I love working across the stack—from backend services to 
+        data platforms—and continually improving how data flows through products.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
