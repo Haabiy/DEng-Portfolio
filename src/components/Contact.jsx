@@ -18,7 +18,7 @@ const Contact = () => {
       className="bg-gradient-to-b from-gray-900 to-black text-white py-20"
     >
       <div className="container mx-auto px-6 text-center">
-        <h3 className="text-4xl font-bold text-blue-400 mb-8">Get in Touch</h3>
+        <h3 className="text-4xl font-bold text-white mb-8">Get in Touch</h3>
 
         <p className="text-gray-400 text-lg mb-12 max-w-3xl mx-auto">
             Have a question or want to connect? I'm just a message away! 

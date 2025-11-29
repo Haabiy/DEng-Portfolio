@@ -61,7 +61,7 @@ const Navbar = () => {
 
         {/* Menu Links with Horizontal Bar Effect */}
         <ul className="hidden md:flex space-x-8 text-white text-lg relative">
-          <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-purple-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+          <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-gray-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
           <li className="group">
             <Link
               to="hero"
@@ -70,7 +70,7 @@ const Navbar = () => {
               className="hover:text-blue-400 transition duration-300 hover:cursor-pointer relative"
             >
               Home
-              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-purple-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-gray-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
             </Link>
           </li>
           <li className="group">
@@ -81,7 +81,7 @@ const Navbar = () => {
               className="hover:text-blue-400 transition duration-300 hover:cursor-pointer relative"
             >
               About
-              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-purple-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-gray-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
             </Link>
           </li>
           <li className="group">
@@ -92,7 +92,7 @@ const Navbar = () => {
               className="hover:text-blue-400 transition duration-300 hover:cursor-pointer relative"
             >
               Projects
-              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-purple-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-gray-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
             </Link>
           </li>
           <li className="group">
@@ -103,7 +103,7 @@ const Navbar = () => {
               className="hover:text-blue-400 transition duration-300 hover:cursor-pointer relative"
             >
               Contact Me
-              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-purple-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
+              <div className="absolute bottom-0 left-0 h-0.5 w-full bg-gradient-to-r from-blue-400 via-gray-600 to-blue-500 transform scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></div>
             </Link>
           </li>
         </ul>

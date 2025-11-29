@@ -43,7 +43,7 @@ const About = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-center text-blue-400 mb-8"
+          className="text-4xl font-bold text-center text-white mb-8"
         >
           About Me
         </motion.h3>
@@ -103,7 +103,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-16"
         >
-          <h4 className="text-4xl font-bold text-center text-blue-400 mb-12">Experience</h4>
+          <h4 className="text-4xl font-bold text-center text-white mb-12">Experience</h4>
           <div className="relative pl-8">
             <motion.div 
               className="absolute left-0 top-0 h-full w-0.5 bg-blue-400"

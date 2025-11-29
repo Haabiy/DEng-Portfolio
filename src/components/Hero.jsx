@@ -30,7 +30,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-6xl md:text-7xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
+          className="text-6xl md:text-7xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-gray-500 to-pink-500"
         >
           Abiy Dema
         </motion.h1>
@@ -89,7 +89,7 @@ const Hero = () => {
             to="projects"
             smooth={true}
             duration={500}
-            className="mt-10 inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-10 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg cursor-pointer"
+            className="mt-10 inline-block bg-gradient-to-r from-blue-400 to-gray-800 text-white font-semibold py-3 px-10 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg cursor-pointer"
           >
             Explore My Work
           </Link>
@@ -119,7 +119,7 @@ const Hero = () => {
           ease: "linear",
           repeat: Infinity,
         }}
-        className="absolute bottom-1/4 -left-16 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20"
+        className="absolute bottom-1/4 -left-16 w-72 h-72 bg-gray-500 rounded-full mix-blend-multiply filter blur-xl opacity-20"
       ></motion.div>
     </section>
   );

@@ -52,7 +52,7 @@ const CEOTestimonial = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-center text-blue-400 mb-16"
+          className="text-4xl font-bold text-center text-white mb-16"
         >
           Recognition & Achievement
         </motion.h3>
@@ -183,7 +183,7 @@ const CEOTestimonial = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-16 text-center"
         >
-          <h4 className="text-3xl font-semibold text-blue-300 mb-6">My Certification</h4>
+          <h4 className="text-3xl font-semibold text-white mb-6">My Certification</h4>
           <p className="text-gray-300 mb-8 text-lg">
             I have also received a certification during Spring Award 2024 at Mangabey. You can review it below.
           </p>

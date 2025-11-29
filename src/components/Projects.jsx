@@ -70,7 +70,7 @@ const Projects = () => {
   return (
     <section id="projects" ref={ProjectsRef} className="py-20 px-6 bg-gray-900 relative">
       <div className="container mx-auto">
-        <h3 className="text-4xl font-bold text-blue-400 text-center mb-12 hover:cursor-pointer">
+        <h3 className="text-4xl font-bold text-white text-center mb-12 hover:cursor-pointer">
           Personal Projects
         </h3>
 
@@ -133,7 +133,7 @@ const Projects = () => {
       </div>
 
       <div className="absolute top-10 right-10 w-40 h-40 rounded-full bg-blue-700 opacity-20 animate-bounce-slow"></div>
-      <div className="absolute bottom-20 left-10 w-32 h-32 rounded-full bg-purple-500 opacity-20 animate-bounce-slow"></div>
+      <div className="absolute bottom-20 left-10 w-32 h-32 rounded-full bg-gray-500 opacity-20 animate-bounce-slow"></div>
     </section>
   );
 };

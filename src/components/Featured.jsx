@@ -24,7 +24,7 @@ const FeaturedSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl font-bold text-center text-blue-400 mb-12"
+          className="text-4xl font-bold text-center text-white mb-12"
         >
           Featured by Mangabey
         </motion.h3>
