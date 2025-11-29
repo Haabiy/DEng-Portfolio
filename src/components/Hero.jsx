@@ -50,7 +50,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto"
         >
-          Passionate about building scalable, efficient data systems—optimized through FinOps to turn data into actionable insight.
+          Passionately interested in Software Engineering with a focus on data systems, and I enjoy building reliable platforms, 
+          scalable pipelines, and efficient system architectures. I love working across the stack—from backend services to 
+          data platforms—and continually improving how data flows through products.
         </motion.p>
 
         <motion.div 
