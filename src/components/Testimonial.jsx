@@ -183,10 +183,6 @@ const CEOTestimonial = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-16 text-center"
         >
-          <h4 className="text-3xl font-semibold text-white mb-6">My Certification</h4>
-          <p className="text-gray-300 mb-8 text-lg">
-            I have also received a certification during Spring Award 2024 at Mangabey. You can review it below.
-          </p>
           <motion.a
             href={Certificate}
             className="inline-block bg-blue-500 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-blue-600 transition duration-300"
